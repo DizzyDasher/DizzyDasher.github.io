@@ -1,7 +1,8 @@
 <!doctype html>
 <!-- eggs dee - den -->
 <html>
-<header>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<style>
 		html{
 			color: white; 
@@ -14,35 +15,25 @@
 			background-attachment:fixed;
 		}
 		#div-background {
-			width: 100%;
 			padding: 10px;
 			border: 0px solid red;
-			margin: 0px 300px;
 			background: rgba(0, 0, 0, 0.80);
-
 		}
 		.center {
+			margin:auto;
 			width:50%;
 			text-align:center;
+			
 		}
-		
 		.alignleft {
 			text-align:left;
 		}
-		
-		#dizzyimage.center {
-			height: 900px; width: 900px;
-			margin:auto;
-			box-shadow: 10px 10px 5px grey;
-			
-			}
 		a {
 			color: #80ff80;
 		}
 		a:hover {
 			color: yellow;
 		}
-		
 		button {
 			background-color: black;
 			color: white; 
@@ -50,36 +41,67 @@
 			padding: 15px;
 			margin: 5px;
 			box-shadow: 0 12px 16px 0 rgba(255,255,255,0.2), 0 6px 20px 0 rgba(255,255,255,0.3);
-			}
-			
+		}
 		.morepictures{
-		 margin: 10px;
-		 top: 50%;
-		 left: 50%;
-			}
-			
+			 margin: 10px;
+			 top: 50%;
+			 left: 50%;
+			 max-width: 100%;
+		}
 		div.morepictures {
-			height: 450px; 
+			height: auto;
 			width: auto;
-			}
-			
+		}
 			
 		img.smallcovers {
-			max-height: 30%;
-			max-width: 30%;
-			margin: 15px;
+			height: 200px;
+			width: 200px;
+			margin: 5px;
 		}
-		
-	</style>
-</header>
-<body class="center">
+		.autoresize{
+			overflow:hidden;
+		}
+		.autoresize img{
+			max-width: 100%;
+		}
+		.class{
+			clear:both;
+		}
+		.dizzytop{
+			height: 300px; width: 300px;
+		}
+		h1 {
+			font-size: 90px;
+			text-shadow: 0 10px 15px white;
+			color: yellow;
+		}
+		.btn {
+			background-color: Black;
+			border: white;
+			color: white;
+			padding: 12px 30px;
+			cursor: pointer;
+			font-size: 20px;
 
+		}
+		.btn:hover {
+			background-color: Gold;
+			color: black;
+		} 
+	</style>
+</head>
+<body >
+
+<div  id="div-background" class="center">
 <title> Dizzy's World</title>
-<div  id="div-background">
-<h1><strong><em>DizzyDasher</em></strong></h1>
+<img id="dizzytop" src= "images/dizzytop.png">
+<h1 class="DizzyDasher"><strong><em>DizzyDasher</em></strong></h1>
 <br>
-<img id="dizzyimage" src= "images/DizzyDasher.png">
-<br>
+<div class="autoresize" id="DizzyDasher">
+
+<img id="dizzyimage"  src= "images/DizzyDasher.png">
+
+</div>
 <button onclick="location.href='https://soundcloud.com/dizzy-dasher18'" type="button">
          Soundcloud</button>
 <br>
@@ -104,21 +126,40 @@
 <img id="dizzyimage9" class="smallcovers" src= "images/dizzyimage9.jpg">
 <img id="dizzyimage9" class="smallcovers" src= "images/dizzyimage10.jpg">
 </div>
+<div class="clear">
 <br>
 <br>
 <br>
 <p> Im releasing a <strong> brand new</strong> LP soon.
 	This 20-Track LP features some of dizzy's best work to-date.
-	Cloudy atmospheric synths, dancehall & 80's style drums & Agressive roaring basslines.
+	Cloudy atmospheric synths, dancehall & 80's style drums & Aggressive roaring basslines.
 	<br>Ideas were crafted from a mix of <strong>Nostalgia..</strong></br> 
 	<br><strong>Remixed projects..</strong></br>
 	<strong>Remastered songs..</strong>
 	<br><strong>Unused written lyrics..</strong></br>
 	<strong>& More!</strong>
 	<p>
+	<br>
+	<br>
+	<p> <strong>Here</strong> is a sample demo from track 19 (Sand Is Not Alone)
+	<br>
+<audio controls>
+  <source src="audio/DizzyTest.wav" type="audio/wav">
+Your browser does not support the audio element.
+</audio> 
+
+<br>
+
+<a href="audio/DizzyTest.wav" download="A"><button type="button" class="btn">
+		Download
+</button>
+</a>
+
+<p>
 	Featuring help from <strong>@Dr.Kups</strong> as usual, he handled some of the final mix. Remastered songs were also looked over by the both of them.
 	These songs were remastered because of the idea of experience vs a good idea is shown.
 In the works for about <em>2 months</em> so far</p>
+</div>
 </div>
 </body>
 </html>
