@@ -112,3 +112,9 @@
 			font-family: monospace;
 			background-color: #C6E9FF;
 			 }
+		h2 {
+			font-size: 30px;
+			text-shadow: 0 10px 15px white;
+			color: yellow;
+			text-margin: auto;
+		}
