@@ -117,4 +117,8 @@
 			text-shadow: 0 10px 15px white;
 			color: yellow;
 			text-margin: auto;
+		player {
+			width: auto;
+			height: auto; 
+			
 		}
