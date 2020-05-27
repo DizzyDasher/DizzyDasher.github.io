@@ -119,8 +119,13 @@
 			color: yellow;
 			text-margin: auto;	
 			}
+			
+		#navbar {
+			position: absolute;
+			}
+				
 		.dropdown {
-			position: relative;
+			width: 10%;
 			display: inline-block;
 			}
 
@@ -128,9 +133,9 @@
 			display: none;
 			position: absolute;
 			background-color: #000000;
-			min-width: 160px;
+			min-width: 150px;
 			box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-			padding: 12px 16px;
+			padding: 2px 5px;
 			z-index: 1;
 			}
 
@@ -141,5 +146,19 @@
 		.dropdown-content ul {
 			display: block;
 			font-size: 10px;
-			width: 20px;
+			text-align: center;
+			margin: 15px;
+			}
+			
+		.dropdown-content li {
+			display: block;
+			font-size: 15px;
+			padding: 2px;
+			border: 2px solid yellow;
+			margin: 25px 2px;
+			}
+		.dropdown img {
+			height: 10%;
+			width: 40%;
+			margin: 0px 60px;
 			}
