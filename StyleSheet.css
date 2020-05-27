@@ -92,16 +92,17 @@
 		}
 		#nav {
 			width: 100vw;
-			background-color: #D6EFFF;
+			background-color: #000000;
 			}
-		#ul	 {
+		ul	 {
 			margin: 0;
 			padding: 0;
 			display: flex;
 			}
-		#li  {
+		li  {
 			list-style-type: none;  
 			margin: 0 2vw;
+			shadow: 2px;
   /* our font-size will be 3% of the height of the viewport */
 			font-size: 3vh;
 			}
@@ -116,9 +117,23 @@
 			font-size: 28px;
 			text-shadow: 0 10px 15px white;
 			color: yellow;
-			text-margin: auto;
-		player {
-			width: auto;
-			height: auto; 
-			
-		}
+			text-margin: auto;	
+			}
+		.dropdown {
+			position: relative;
+			display: inline-block;
+			}
+
+		.dropdown-content {
+			display: none;
+			position: absolute;
+			background-color: #000000;
+			min-width: 160px;
+			box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+			padding: 12px 16px;
+			z-index: 1;
+			}
+
+			.dropdown:hover .dropdown-content {
+			display: block;
+			}
